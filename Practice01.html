@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        이름 : <br><input type="text" name="student_name"><br>
+        학번 : <br><input type="text" name="student_id"><br>
+        학과 : <br><input type="text" name="department" value="정보통신과"><br>
+        <br />
+        <input type="data" name="startday">
+        <p></p>
+        <input type="time" name="startday">
+
+    </form>
+    
+    <p></p>
+    <form action="./action.php" method="get">
+        <fieldset>
+            <legend>관리자 로그인</legend>
+            이름 : <Radio type="text" name="st_name"><br>
+            학번 : <input type="text" name="st_id"><br>
+            학과 : <input type="text" name="depertment"><br>
+            <button type="submit">제출하기</button>
+        </fieldset>
+        <form action="./action2.php" method="get">
+            <textarea name="opinion" cols="30" rows="5"></textarea><br>
+            <input type="submit">
+        </form>
+        <p></p>
+        <select name="select" id="select" >
+            <option value="defalut" >본인의 과를 선택하세요</option>
+            <option value="1" >전자제어과</option>
+            <option value="2" >전자회로과</option>
+            <option value="3" >정보통신과</option>
+            <option value="4" >인공지능전자과</option>
+        </select>
+    </form>
+</body>
+</html>
